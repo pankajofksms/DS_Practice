@@ -11,12 +11,12 @@ public class CoinChnageProb {
 	}
 
 	private static List<Integer> returnChange(int amount) {
-		List<Integer> changeList = new  ArrayList<>();
-		while(amount>0) {
+		List<Integer> changeList = new ArrayList<>();
+		while (amount > 0) {
 			int temp = findLargestChange(amount);
-			if(temp!=0)
+			if (temp != 0)
 				changeList.add(temp);
-			amount = amount-temp;
+			amount = amount - temp;
 		}
 		return changeList;
 	}
