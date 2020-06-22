@@ -1,0 +1,76 @@
+	* Java provides security with the help of 
+		- JVM
+		- Bytecode verifier
+		- Security Manager : https://www.baeldung.com/java-security-manager 
+		
+	* Robust
+		- Strong Memory Management
+		- Java Compilers
+		- Exception Handling
+		
+	* Architectural Neutral - 4 bits for both 32 bit and 64 bit OS unlike C
+	
+	* Portable because of .class
+	
+	* High Performance 
+		- JIT (in JVM)
+		
+	* Distributed 
+		- Network Programming
+		- You can access a file from another machine (Example)
+		
+	* Java Source -> .class (Compiler) -> bytecode execution (Interpreter does the execution of bytecode)
+	
+	* Classloader --> ByteCode Verifier --> Interpreter
+	
+	* JVM consists of
+		- classloader
+		- heap
+		- stack
+		- PC registers --> Stores the current execution details
+		- class area -> also known as method area where classes and methods are loaded
+		- execution engine -> JIT + interpretor (Converts parts of byteCode) + Processor (Virtual)
+		- native libraries - Library written in other languages as C,C++, etc
+		- native library interface
+		
+	* JVM tasks
+		- load code
+		- verify code
+		- execute code
+		- provide runtime env
+		
+	
+
+***************************************
+	
+	* Byte Streams(for handling input and output of bytes -8 bit) v/s Character Streams(for handling input and output of character - 16 bit)
+	
+	* Byte Stream - InputStream and OutputStream
+	
+	* Character Stream - Reader and Writer
+	
+	* System contains 3 pre-defined stream variables : in, out, err.
+		- System.in is an object of InputStream
+		- Others are object of PrintStream
+		
+	* next() method does not store character after space
+	
+******************************************
+Calculate angle problem
+
+******************************************
+Moore Voting Algo (Find if a no occurs more than (arr.length/2))
+ - 	major = 0;
+ 	count = 1;
+ 	for(int i=1;i<n;i++){
+ 		if(arr[major] == arr [i])
+ 			count++;
+		else
+			count--;
+		if(count == 0){
+			major = i;
+			count = 1;	
+		}
+	}	
+		
+		
