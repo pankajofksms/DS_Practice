@@ -72,5 +72,13 @@ Moore Voting Algo (Find if a no occurs more than (arr.length/2))
 			count = 1;	
 		}
 	}	
+	
+	
+******************************************
+Eucledian Algorithm for GCD
+ - On subtracting larger no by smaller no, the GCD does not change
+******************************************
+
+
 		
 		
