@@ -5,26 +5,43 @@ import java.util.*;
   public class Main {
     public static void main(String args[]) throws IOException {
       Scanner scan = new Scanner(System.in);
-      int testCases = scan.nextInt();
-      int num;
-      while(testCases-- != 0){
-        num = scan.nextInt();
-        System.out.println(fun(2));
+      int times = scan.nextInt();
+      long bmw;
+      long audi;
+      long k;
+      long lcm;
+      int count;
+      long prod;
+      int loop;
+      while(times-- != 0){
+        count = 0;
+        loop = 1;
+        bmw = scan.nextLong();
+        audi = scan.nextLong();
+        k = scan.nextLong();
+        lcm = findLCM(bmw,audi);
+        prod = lcm;
+        while(prod<k){
+          prod = lcm*loop;
+          count++;
+          loop++;
+        }
+        System.out.println(count);
       }
+      
     }
     
-    private static void printPattern(int num){
-      System.out.print(num+" ");
-      if(num<=0)
-        return;
-      printPattern(num-5);
-      System.out.print(num+" ");
+    private static long findLCM(long a , long b){
+      long prod = a*b;
+      long gcd = findGcd(a,b);
+      return prod/gcd;
     }
     
-    private static int fun(int n)
-    {
-     if (n == 4)
-     return n;
-     else return 2*fun(n+1);
+    private static long findGcd(long a, long b){
+      if(a==0 || b==0)
+        return Math.max(a,b);
+      if(a>b)
+        return findGcd(a-b,b);
+      return findGcd(a,b-a);  
     }
   }

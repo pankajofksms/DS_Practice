@@ -43,7 +43,8 @@
 
 ***************************************
 	
-	* Byte Streams(for handling input and output of bytes -8 bit) v/s Character Streams(for handling input and output of character - 16 bit)
+	* Byte Streams(for handling input and output of bytes -8 bit) 
+			v/s Character Streams(for handling input and output of character - 16 bit)
 	
 	* Byte Stream - InputStream and OutputStream
 	
@@ -63,7 +64,7 @@ Moore Voting Algo (Find if a no occurs more than (arr.length/2))
  - 	major = 0;
  	count = 1;
  	for(int i=1;i<n;i++){
- 		if(arr[major] == arr [i])
+ 		if(arr[major] == arr[i])
  			count++;
 		else
 			count--;
@@ -77,8 +78,19 @@ Moore Voting Algo (Find if a no occurs more than (arr.length/2))
 ******************************************
 Eucledian Algorithm for GCD
  - On subtracting larger no by smaller no, the GCD does not change
+ - GCD division method
 ******************************************
 
+GCD(a,b) * LCM(a,b) = a*b
 
+******************************************
+ ((-A % M) + M) % M) --> For finding mod for negative number
+ 
+Modular Multiplicative Index --> (A*X) mod 1 = 1 
+
+
+If GCD(A,M)=1 then a MMI exist for A and M combination
+
+  
 		
 		
