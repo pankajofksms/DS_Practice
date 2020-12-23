@@ -79,6 +79,10 @@ Moore Voting Algo (Find if a no occurs more than (arr.length/2))
 Eucledian Algorithm for GCD
  - On subtracting larger no by smaller no, the GCD does not change
  - GCD division method
+ 
+ 
+ - x = y1
+   y = x1 - (a/b) * y;
 ******************************************
 
 GCD(a,b) * LCM(a,b) = a*b
@@ -86,10 +90,11 @@ GCD(a,b) * LCM(a,b) = a*b
 ******************************************
  ((-A % M) + M) % M) --> For finding mod for negative number
  
-Modular Multiplicative Index --> (A*X) mod 1 = 1 
+Modular Multiplicative Inverse --> (A*X) mod 1 = 1 
 
 
-If GCD(A,M)=1 then a MMI exist for A and M combination
+If GCD(A,M)=1 only then a MMI exist for A and M combination
+
 
   
 		

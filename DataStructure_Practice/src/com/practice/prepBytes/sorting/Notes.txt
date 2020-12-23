@@ -1,0 +1,49 @@
+ ****************************
+ Sorting can be based of following categories:
+  - no. of comparison
+  - stability - order remains if duplicate
+  - no. of swaps
+  - memory usage (in-place sorting)
+  
+ ********************************************* 
+  Bubble sort 
+ 	- simplest sorting algorithm
+ 	- Best : O(n)
+ 	- Worst : O(n^2)
+ 	- Space Complexity : O(1)
+ 
+  Selection sort
+  	- Iterate through the array and search for minimum element and put it at position 'i'
+  	- i  starts from 1 to n
+  	
+  Insertion sort
+    - search for a place '<x' 'x' '>x'
+    - O(n^2) , Best case -> O(n)
+    - In-place algo : O(1)
+    - Online algorithm - since you don't need all the input in starting
+    
+ *******************************************************************************************
+ 
+  Merge sort
+    - divide and conquer
+    - we try to merge 2 sorted array
+    - Time complexity : O(n log n) 
+    - Space complexity : O(n)  
+ 
+   Properties
+    - divide and conquer
+    - recursive algorithm
+    - stable sorting
+    - not an in-place sorting algorithm (since we need extra space) 
+    
+ *******************************************************************************************
+	
+  Quick sort
+    - in-place sorting 
+    - avg case - O(n log n)
+    - worst case - O(n^2)
+    
+
+    
+    
+    

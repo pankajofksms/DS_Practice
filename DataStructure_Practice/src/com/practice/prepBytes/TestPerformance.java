@@ -6,8 +6,8 @@ public class TestPerformance {
 	public static void main(String[] args) {
 		long start = System.nanoTime();
 		
-		for(long i=1;i<100000;i++) {
-			for(long j=1;j<100000;j++) {}
+		for(long i=1;i<20000000;i++) {
+			
 			
 		}
 		System.out.println("In NanoSec: " + (System.nanoTime() - start));

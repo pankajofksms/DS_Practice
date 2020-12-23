@@ -1,11 +1,17 @@
 package com.practice.prepBytes;
 public class GFG { 
-    static int totalDigits(int n) 
+   
+	/**
+	 * This method is used
+	 * 
+	 * @param n 
+	 * @return
+	 */
+	static int totalDigits(int n) 
     { 
         // number_of_digits store total 
         // digits we have to write 
         int number_of_digits = 0; 
-  
         // In the loop we are decreasing 
         // 0, 9, 99 ... from n till 
         // ( n - i + 1 ) is greater than 0 

@@ -1,0 +1,19 @@
+ - strict binary tree --> all nodes have either 0 or 2 children
+ 
+ - full binary tree --> all nodes have 2 children and are at the same level
+ 
+ - complete binary tree --> 
+ 	* all the levels except last has to be completely filled
+ 	* at the last level nodes should be as far left as possible (h or h-1)
+ 	
+ - preorder --> single node is encountered 3 times
+ 
+ 
+ - https://www.geeksforgeeks.org/query-to-check-if-a-range-is-made-up-of-consecutive-elements/
+ 
+ 
+ 
+ 
+ 
+ 
+ 	
