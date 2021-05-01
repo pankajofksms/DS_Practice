@@ -5,18 +5,16 @@ import java.util.LinkedList;
 public class ProducerConsumer {
 	static final int CAPACITY = 2;
 	int value = 0;
-	LinkedList<Integer> list = new LinkedList<Integer>();
+	LinkedList<Integer> list = new LinkedList<>();
 
 	public static void main(String[] args) {
 		Thread producer = new Thread(new Runnable() {
 
 			@Override
 			public void run() {
-				// TODO Auto-generated method stub
 				try {
 					new ProducerConsumer().produce();
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
@@ -26,11 +24,9 @@ public class ProducerConsumer {
 
 			@Override
 			public void run() {
-				// TODO Auto-generated method stub
 				try {
 					new ProducerConsumer().consume();
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
@@ -42,13 +38,11 @@ public class ProducerConsumer {
 		try {
 			producer.join();
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		try {
 			consumer.join();
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

@@ -3,12 +3,12 @@ package com.practice.prepBytes.greedy;
 import java.util.*;
 import java.util.Scanner;
 
-class Main {
+class Mains {
 	ArrayList num = new ArrayList();
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		Main h = new Main();
+		Mains h = new Mains();
 		int t, n, m, count, a, b;
 		t = scanner.nextInt();
 		String str;
